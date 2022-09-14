@@ -31,4 +31,12 @@ describe('sayHello', ()=>{
     it('should never return undefined when called', ()=>{
         expect(sayHello()).not.toBe(undefined)
     })
+
+    it('should return Hello Danny! when called with sayHello(\'Danny\')',()=>{
+        expect(sayHello('Danny')).toBe('Hello Danny!')
+    })
+
+    it('should return Hello Pat! when called with sayHello(\'Pat\')',()=>{
+        expect(sayHello('Pat')).toBe('Hello Pat!')
+    })
 })
