@@ -48,7 +48,7 @@ describe('sayHello', ()=>{
     })
 
     it('should return Hello, undefined! when input is undefined',()=>{
-        expect(sayHello(undefined)).toBe('Hello, undefined!')
+        expect(sayHello(undefined)).toBe('Hello, World!')
     })
 
     //null
