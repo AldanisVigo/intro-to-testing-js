@@ -30,3 +30,7 @@ const sayHello = (input) => {
     }
 
 }
+
+const isFive = (input) => {
+    return input == 5
+}

@@ -76,3 +76,26 @@ describe('sayHello', ()=>{
         expect(sayHello(()=>{})).toBe('No functions allowed')
     })
 })
+
+//Excersise 10 - isFive function
+describe('isFive',()=>{
+    //Make sure the function is defined
+    it('isFive function should be defined',()=>{
+        expect(typeof isFive).toBe('function')
+    })
+
+    //Ensure that isFive returns a boolean no matter what the input
+    it('should return a boolean no matter what input',()=>{
+        expect(typeof isFive()).toBe('boolean')
+    })
+
+    //Ensure that isFive returns true when passed 5
+    it('should return true when the input is 5',()=>{
+        expect(isFive(5)).toBe(true)
+    })
+
+    //What about if we pass in the string "5"? Do you want isFive to return true for that?
+    it('should return true when the input is the string \'5\'',()=>{
+        expect(isFive('5')).toBe(true)
+    })
+})
