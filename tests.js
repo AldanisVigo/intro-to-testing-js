@@ -99,3 +99,51 @@ describe('isFive',()=>{
         expect(isFive('5')).toBe(true)
     })
 })
+
+describe('isEven',()=>{
+    //Assert that isEven:
+    //returns a boolean no matter the input
+    it('should return a boolean no matter the input',()=>{
+        expect(typeof isEven()).toBe('boolean')
+    })
+
+    //returns true when executed with isEven(2)
+    it('should return true when passed the number 2',()=>{
+        expect(isEven(2)).toBe(true)
+    })
+
+    //returns true when executed with isEven(-4)
+    it('should return true when passed -4',()=>{
+        expect(isEven(-4)).toBe(true)
+    })
+
+    //returns false when executed with isEven(3)
+    it('should return false when passed 3',()=>{
+        expect(isEven(3)).toBe(false)
+    })
+
+    //returns false when called with isEven("banana")
+    it('should return false when passed \'banana\'',()=>{
+        expect(isEven('banana').toBe(false))
+    })
+
+    //returns true when called with isEven("8")
+    it('should return true when passed 8',()=>{
+        expect(isEven(8)).toBe(true)
+    })
+
+    //returns false when called with isEven(Infinity)
+    it('should return false when input is Infinity',()=>{
+        expect(isEven(Infinity)).toBe(false)
+    })
+
+    //return false when called with a boolean input like isEven(true) or isEven(false)
+    it('should return false when passed a boolean value',()=>{
+        expect(isEven(true)).toBe(false)
+    })
+
+    //returns false when called without an argument like isEven()
+    it('should return false when called without any arguments',()=>{
+        expect(isEven()).toBe(false)
+    })
+})
