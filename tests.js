@@ -162,7 +162,7 @@ describe('isVowel',()=>{
 
     //isVowel("A") returns true
     it('should return true when input is A',()=>{
-        expect(isVowel('A').toBe(true))
+        expect(isVowel('A')).toBe(true)
     })
 
     //isVowel("y") returns false

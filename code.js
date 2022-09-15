@@ -31,11 +31,8 @@ const sayHello = (input) => {
 
 }
 
-const isFive = (input) => {
-    return input == 5
-}
+const isFive = (input) =>  input == 5
 
-const isEven = (input) => {
-    return (input != null && input % 2 == 0)
-}
+const isEven = (input) => input != null && input % 2 == 0
 
+const isVowel = (x) => ['number','undefined','boolean'].includes(typeof x) ? false : ['a','e','i','o','u'].includes(x.toLowerCase())
