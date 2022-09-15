@@ -36,3 +36,5 @@ const isFive = (input) =>  input == 5
 const isEven = (input) => input != null && input % 2 == 0
 
 const isVowel = (x) => ['number','undefined','boolean'].includes(typeof x) ? false : ['a','e','i','o','u'].includes(x.toLowerCase())
+
+const add = (a,b) => Number(a) + Number(b)

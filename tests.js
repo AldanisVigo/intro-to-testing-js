@@ -200,7 +200,7 @@ describe('add',()=>{
 
     // add(-3, -9) returns -12
     it('should return -12 when inputs are -3 and -9',()=>{
-        expect(add(-3,-9)).toBe(-9)
+        expect(add(-3,-9)).toBe(-12)
     })
 
     // add("5", 6) returns 11
@@ -215,16 +215,16 @@ describe('add',()=>{
 
     // add("banana", "split") returns NaN
     it('should return NaN when inputs are "banana" and "split"',()=>{
-        expect(add("banana","split")).toBe(NaN)
+        expect(add("banana","split")).toBeNaN()
     })
 
     // add(2, "apples") returns NaN
     it('should return NaN when inputs are 2 and "apples"',()=>{
-        expect(add(2,"apples")).toBe(NaN)
+        expect(add(2,"apples")).toBeNaN()
     })
 
     // add() returns NaN
     it('should return NaN if inputs are undefined',()=>{
-        expect(add()).toBe(NaN)
+        expect(add()).toBeNaN()
     })
 })
