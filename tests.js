@@ -124,7 +124,7 @@ describe('isEven',()=>{
 
     //returns false when called with isEven("banana")
     it('should return false when passed \'banana\'',()=>{
-        expect(isEven('banana').toBe(false))
+        expect(isEven('banana')).toBe(false)
     })
 
     //returns true when called with isEven("8")
@@ -145,5 +145,49 @@ describe('isEven',()=>{
     //returns false when called without an argument like isEven()
     it('should return false when called without any arguments',()=>{
         expect(isEven()).toBe(false)
+    })
+})
+
+
+describe('isVowel',()=>{
+    //isVowel always returns a boolean
+    it('should always return a boolean',()=>{
+        expect(typeof isVowel()).toBe('boolean')
+    })
+
+    // isVowel("a") returns true
+    it('should return true when input is a',()=>{
+        expect(isVowel('a')).toBe(true)
+    })
+
+    //isVowel("A") returns true
+    it('should return true when input is A',()=>{
+        expect(isVowel('A').toBe(true))
+    })
+
+    //isVowel("y") returns false
+    it('should return false when input is \'y\'',()=>{
+        expect(isVowel('y')).toBe(false)
+    })
+
+    //isVowel(4) returns false
+    it('should return false when the input is 4',()=>{
+        expect(isVowel(4)).toBe(false)
+    })
+
+    //isVowel(true) or isVowel(false) both return false
+    it('should return false if input is true or false',()=>{
+        expect(isVowel(true)).toBe(false)
+        expect(isVowel(false)).toBe(false)
+    })
+
+    //isVowel("banana") returns false
+    it('should return false if the input is \'banana\'',()=>{
+        expect(isVowel('banana')).toBe(false)
+    })
+
+    //isVowel() returns false
+    it('should return false if the input is undefined',()=>{
+        expect(isVowel()).toBe(false)
     })
 })

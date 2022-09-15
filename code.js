@@ -34,3 +34,8 @@ const sayHello = (input) => {
 const isFive = (input) => {
     return input == 5
 }
+
+const isEven = (input) => {
+    return (input != null && input % 2 == 0)
+}
+
