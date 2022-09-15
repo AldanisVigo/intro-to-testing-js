@@ -166,7 +166,7 @@ describe('isVowel',()=>{
     })
 
     //isVowel("y") returns false
-    it('should return false when input is \'y\'',()=>{
+    it('should return false when input is "y"',()=>{
         expect(isVowel('y')).toBe(false)
     })
 
@@ -182,12 +182,49 @@ describe('isVowel',()=>{
     })
 
     //isVowel("banana") returns false
-    it('should return false if the input is \'banana\'',()=>{
+    it('should return false if the input is "banana"',()=>{
         expect(isVowel('banana')).toBe(false)
     })
 
     //isVowel() returns false
     it('should return false if the input is undefined',()=>{
         expect(isVowel()).toBe(false)
+    })
+})
+
+describe('add',()=>{
+    // add(2, 3) returns 5
+    it('should return 5 when inputs are 2 and 3',()=>{
+        expect(add(2,3)).toBe(5)
+    })
+
+    // add(-3, -9) returns -12
+    it('should return -12 when inputs are -3 and -9',()=>{
+        expect(add(-3,-9)).toBe(-9)
+    })
+
+    // add("5", 6) returns 11
+    it('should return 11 when inputs are "5" and 6',()=>{
+        expect(add("5",6)).toBe(11)
+    })
+
+    // add("-4", "10") returns 6
+    it('should return 6 when inputs are "-4" and "10"',()=>{
+        expect(add("-4","10")).toBe(6)
+    })
+
+    // add("banana", "split") returns NaN
+    it('should return NaN when inputs are "banana" and "split"',()=>{
+        expect(add("banana","split")).toBe(NaN)
+    })
+
+    // add(2, "apples") returns NaN
+    it('should return NaN when inputs are 2 and "apples"',()=>{
+        expect(add(2,"apples")).toBe(NaN)
+    })
+
+    // add() returns NaN
+    it('should return NaN if inputs are undefined',()=>{
+        expect(add()).toBe(NaN)
     })
 })
